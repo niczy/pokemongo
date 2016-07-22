@@ -9,8 +9,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+<link rel="import" href="/src/components/pokimg.html">
 
-<dom-module id="my-view1">
+<dom-module id="my-main">
 
   <template>
 
@@ -38,22 +40,30 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         color: #555;
         text-align: center;
       }
+      my-pokimg {
+        display: inline-block;
+      }
       h1 {
         font-size: 22px;
         margin: 16px 0;
         color: #212121;
       }
     </style>
-    <img src="/images/pokemon/120px/Abra.png">
-
+    <iron-ajax
+      auto
+      url="/_/pokemon/list"
+      handle-as="json"
+      last-response="{{pokemonList}}"
+      debounce-duration="300"></iron-ajax>
+    <template is="dom-repeat" items="[[pokemonList]]">
+      <my-pokimg name="{{item.Name-eng}}"></my-pokimg>
+    </template>
   </template>
 
   <script>
 
     Polymer({
-
-      is: 'my-view1'
-
+      is: 'my-main'
     });
 
   </script>

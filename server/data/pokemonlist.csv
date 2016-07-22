@@ -1,0 +1,152 @@
+Number,Name-eng,Name-jp,Name-chs,Category,Type-eng,Type-ch's,Weight(kg),Height(m),Rarity,Evolve Level,Evolve(Candy),Max CP
+#001,Bulbasaur,フシギダネ,妙蛙种子,Seed,Grass / Poison,草/毒,6.9,0.7,Uncommon,0,25,1071
+#002,Ivysaur,フシギソウ,妙蛙草,Seed,Grass / Poison,草/毒,13,1,Very Rare,1,100,1632
+#003,Venusaur,フシギバナ,妙蛙花,Seed,Grass / Poison,草/毒,100,2,Super Rare,2,0,2580
+#004,Charmander,ヒトカゲ,小火龙,Lizard,Fire,火,8.5,0.6,Rare,0,25,955
+#005,Charmeleon,リザード,火恐龙,Flame,Fire,火,19,1.1,Super Rare,1,100,1557
+#006,Charizard,リザードン,喷火龙,Flame,Fire / Dragon,火/飞,90.5,1.7,Super Rare,2,0,2602
+#007,Squirtle,ゼニガメ,杰尼龟,Tiny Turtle,Water,水,9,0.5,Uncommon,0,25,1008
+#008,Wartortle,カメール,卡咪龟,Turtle,Water,水,22.5,1,Very Rare,1,100,1582
+#009,Blastoise,カメックス,水箭龟,Shellfish,Water,水,85.5,1.6,Super Rare,2,0,2542
+#010,Caterpie,キャタピー,绿毛虫,Worm,Bug,虫,2.9,0.3,Uncommon,0,12,443
+#011,Metapod,トランセル,铁甲蛹,Cocoon,Bug,虫,9.9,0.7,Very Rare,1,50,477
+#012,Butterfree,バタフリー,巴大蝶,Butterfly,Bug / Flying,虫/飞,32,1.1,Super Rare,2,0,1454
+#013,Weedle,ビードル,独角虫,Hairy Bug,Bug / Poison,虫/毒,3.2,0.3,Common,0,12,449
+#014,Kakuna,コクーン,铁壳蛹,Cocoon,Bug / Poison,虫/毒,10,0.6,Rare,1,50,485
+#015,Beedrill,スピアー,大针蜂,Poison Bee,Bug / Poison,虫/毒,29.5,1,Rare,2,0,1439
+#016,Pidgey,ポッポ,波波,Tiny Bird,Normal / Flying,普/飞,1.8,0.3,Very Common,0,12,679
+#017,Pidgeotto,ピジョン,比比鸟,Bird,Normal / Flying,普/飞,30,1.1,Uncommon,1,50,1223
+#018,Pidgeot,ピジョット,大比鸟,Bird,Normal / Flying,普/飞,39.5,1.5,Rare,2,0,2091
+#019,Rattata,コラッタ,小拉达,Mouse,Normal,普,3.5,0.3,Common,0,25,581
+#020,Raticate,ラッタ,拉达,Mouse,Normal,普,18.5,0.7,Rare,1,0,1444
+#021,Spearow,オニスズメ,烈雀,Tiny Bird,Normal / Flying,普/飞,2,0.3,Common,0,50,686
+#022,Fearow,オニドリル,大嘴雀,Beak,Normal / Flying,普/飞,38,1.2,Rare,1,0,1746
+#023,Ekans,アーボ,阿柏蛇,Snake,Poison,毒,6.9,2,Uncommon,0,50,824
+#024,Arbok,アーボック,阿柏怪,Cobra,Poison,毒,65,3.5,Very Rare,1,0,1767
+#025,Pikachu,ピカチュウ,皮卡丘,Mouse,Electric,电,6,0.4,Rare,0,50,887
+#026,Raichu,ライチュウ,雷丘,Mouse,Electric,电,30,0.8,Super Rare,1,0,2028
+#027,Sandshrew,サンド,穿山鼠,Mouse,Ground,地,12,0.6,Rare,0,50,798
+#028,Sandslash,サンドパン,穿山王,Mouse,Ground,地,29.5,1,Super Rare,1,0,1810
+#029,Nidoran♀,ニドラン♀,尼多兰,Poison Pin,Poison,毒,7,0.4,Uncommon,0,25,876
+#030,Nidorina,ニドリーナ,尼多娜,Poison Pin,Poison,毒,20,0.8,Very Rare,1,50,1404
+#031,Nidoqueen,ニドクイン,尼多后,Drill,Poison / Ground,毒/地,60,1.3,Super Rare,2,0,2485
+#032,Nidoran♂,ニドラン♂,尼多朗,Poison Pin,Poison,毒,9,0.5,Uncommon,0,25,843
+#033,Nidorino,ニドリーノ,尼多力诺,Poison Pin,Poison,毒,19.5,0.9,Very Rare,1,50,1372
+#034,Nidoking,ニドキング,尼多王,Drill,Poison / Ground,毒/地,62,1.4,Super Rare,2,0,2475
+#035,Clefairy,ピッピ,皮皮,Fairy,Fairy,妖,7.5,0.6,Uncommon,0,50,1200
+#036,Clefable,ピクシー,皮可西,Fairy,Fairy,妖,40,1.3,Super Rare,1,0,2397
+#037,Vulpix,ロコン,六尾,Fox,Fire,火,9.9,0.6,Rare,0,50,831
+#038,Ninetales,キュウコン,九尾,Fox,Fire,火,19.9,1.1,Super Rare,1,0,2188
+#039,Jigglypuff,プリン,胖丁,Balloon,Normal / Fairy,普/妖,5.5,0.5,Rare,0,50,917
+#040,Wigglytuff,プクリン,胖可丁,Balloon,Normal / Fairy,普/妖,12,1,Super Rare,1,0,2177
+#041,Zubat,ズバット,超音蝠,Bat,Poison / Flying,毒/飞,7.5,0.8,Common,0,50,642
+#042,Golbat,ゴルバット,大嘴蝠,Bat,Poison / Flying,毒/飞,55,1.6,Rare,1,0,1921
+#043,Oddish,ナゾノクサ,走路草,Weed,Grass / Poison,草/毒,5.4,0.5,Uncommon,0,25,1148
+#044,Gloom,クサイハナ,臭臭花,Weed,Grass / Poison,草/毒,8.6,0.8,Very Rare,1,100,1689
+#045,Vileplume,ラフレシア,霸王花,Flower,Grass / Poison,草/毒,18.6,1.2,Super Rare,2,0,2492
+#046,Paras,パラス,派拉斯,Mushroom,Bug / Grass,虫/草,5.4,0.3,Uncommon,0,50,916
+#047,Parasect,パラセクト,派拉斯特,Mushroom,Bug / Grass,虫/草,29.5,1,Very Rare,1,0,1747
+#048,Venonat,コンパン,毛球,Insect,Bug / Poison,虫/毒,30,1,Uncommon,0,50,1029
+#049,Venomoth,モルフォン,摩鲁蛾,Poison Moth,Bug / Poison,虫/毒,12.5,1.5,Very Rare,1,0,1890
+#050,Diglett,ディグダ,地鼠,Mole,Ground,地,0.8,0.2,Rare,0,50,456
+#051,Dugtrio,ダグトリオ,三地鼠,Mole,Ground,地,33.3,0.7,Super Rare,1,0,1168
+#052,Meowth,ニャース,喵喵,Scratch Cat,Normal,普,4.2,0.4,Rare,0,50,756
+#053,Persian,ペルシアン,猫老大,Classy Cat,Normal,普,32,1,Super Rare,1,0,1631
+#054,Psyduck,コダック,可达鸭,Duck,Water,水,19.6,0.8,Rare,0,50,1109
+#055,Golduck,ゴルダック,哥达鸭,Duck,Water,水,76.6,1.7,Very Rare,1,0,2386
+#056,Mankey,マンキー,猴怪,Pig Monkey,Fighting,格,28,0.5,Rare,0,50,878
+#057,Primeape,オコリザル,火暴猴,Pig Monkey,Fighting,格,32,1,Super Rare,1,0,1864
+#058,Growlithe,ガーディ,卡蒂狗,Puppy,Fire,火,19,0.7,Uncommon,0,50,1335
+#059,Arcanine,ウインディ,风速狗,Legendary,Fire,火,155,1.9,Super Rare,1,0,2983
+#060,Poliwag,ニョロモ,蚊香蝌蚪,Tadpole,Water,水,12.4,0.6,Rare,0,25,795
+#061,Poliwhirl,ニョロゾ,蚊香君,Tadpole,Water,水,20,1,Very Rare,1,100,1340
+#062,Poliwrath,ニョロボン,蚊香泳士,Tadpole,Water / Fighting,水/格,54,1.3,Super Rare,2,0,2505
+#063,Abra,ケーシィ,凯西,Psi,Psychic,超,19.5,0.9,Rare,0,25,600
+#064,Kadabra,ユンゲラー,勇基拉,Psi,Psychic,超,56.5,1.3,Very Rare,1,100,1131
+#065,Alakazam,フーディン,胡地,Psi,Psychic,超,48,1.5,Super Rare,2,0,1813
+#066,Machop,ワンリキー,腕力,Superpower,Fighting,格,19.5,0.8,Rare,0,25,1089
+#067,Machoke,ゴーリキー,豪力,Superpower,Fighting,格,70.5,1.5,Super Rare,1,100,1760
+#068,Machamp,カイリキー,怪力,Superpower,Fighting,格,130,1.6,Super Rare,2,0,2594
+#069,Bellsprout,マダツボミ,喇叭芽,Flower,Grass / Poison,草/毒,4,0.7,Uncommon,0,25,1117
+#070,Weepinbell,ウツドン,口呆花,Flycatcher,Grass / Poison,草/毒,6.4,1,Very Rare,1,100,1723
+#071,Victreebel,ウツボット,大食花,Flycatcher,Grass / Poison,草/毒,15.5,1.7,Super Rare,2,0,2530
+#072,Tentacool,メノクラゲ,玛瑙水母,Jellyfish,Water / Poison,水/毒,45.5,0.9,Rare,0,50,905
+#073,Tentacruel,ドククラゲ,毒刺水母,Jellyfish,Water / Poison,水/毒,55,1.6,Very Rare,1,0,2220
+#074,Geodude,イシツブテ,小拳石,Rock,Rock / Ground,岩/地,20,0.4,Rare,0,25,849
+#075,Graveler,ゴローン,隆隆石,Rock,Rock / Ground,岩/地,105,1,Very Rare,1,100,1433
+#076,Golem,ゴローニャ,隆隆岩,Megaton,Rock / Ground,岩/地,300,1.4,Super Rare,2,0,2303
+#077,Ponyta,ポニータ,小火马,Fire Horse,Fire,火,30,1,Rare,0,50,1516
+#078,Rapidash,ギャロップ,烈焰马,Fire Horse,Fire,火,95,1.7,Super Rare,1,0,2199
+#079,Slowpoke,ヤドン,呆呆兽,Dopey,Water / Psychic,水/超,36,1.2,Rare,0,50,1218
+#080,Slowbro,ヤドラン,呆壳兽,Hermit Crab,Water / Psychic,水/超,78.5,1.6,Super Rare,1,0,2597
+#081,Magnemite,コイル,小磁怪,Magnet,Electric / Steel,电/钢,6,0.3,Rare,0,50,890
+#082,Magneton,レアコイル,三合一磁怪,Magnet,Electric / Steel,电/钢,60,1,Super Rare,1,0,1879
+#083,Farfetch'd,カモネギ,大葱鸭,Wild Duck,Super Rare,普/飞,15,0.8,Rare,3,0,1263
+#084,Doduo,ドードー,嘟嘟,Twin Bird,Super Rare,普/飞,39.2,1.4,Uncommon,0,50,855
+#085,Dodrio,ドードリオ,嘟嘟利,Triple Bird,Super Rare,普/飞,85.2,1.8,Very Rare,1,0,1836
+#086,Seel,パウワウ,小海狮,Sea Lion,Water,水,90,1.1,Rare,0,50,1107
+#087,Dewgong,ジュゴン,白海狮,Sea Lion,Water / Ice,水/冰,120,1.7,Super Rare,1,0,2145
+#088,Grimer,ベトベター,臭泥,Sludge,Poison,毒,30,0.9,Super Rare,0,50,1284
+#089,Muk,ベトベトン,臭臭泥,Sludge,Poison,毒,30,1.2,Super Rare,1,0,2602
+#090,Shellder,シェルダー,大舌贝,Bivalve,Water,水,4,0.3,Rare,0,50,822
+#091,Cloyster,パルシェン,刺甲贝,Bivalve,Water / Ice,水/冰,132.5,1.5,Super Rare,1,0,2052
+#092,Gastly,ゴース,鬼斯,Gas,Ghost / Poison,鬼/毒,0.1,1.3,Uncommon,0,25,804
+#093,Haunter,ゴースト,鬼斯通,Gas,Ghost / Poison,鬼/毒,0.1,1.6,Very Rare,1,100,1380
+#094,Gengar,ゲンガー,耿鬼,Shadow,Ghost / Poison,鬼/毒,40.5,1.5,Super Rare,2,0,2078
+#095,Onix,イワーク,大岩蛇,Rock Snake,Rock / Ground,岩/地,210,8.8,Very Rare,3,0,857
+#096,Drowzee,スリープ,催眠貘,Hypnosis,Psychic,超,32.4,1,Uncommon,0,50,1075
+#097,Hypno,スリーパー,引梦貘人,Hypnosis,Psychic,超,75.6,1.6,Very Rare,1,0,2184
+#098,Krabby,クラブ,大钳蟹,River Crab,Water,水,6.5,0.4,Uncommon,0,50,792
+#099,Kingler,キングラー,巨钳蟹,Pincer,Water,水,60,1.3,Very Rare,1,0,1823
+#100,Voltorb,ビリリダマ,霹雳电球,Ball,Electric,电,10.4,0.5,Very Rare,0,50,839
+#101,Electrode,マルマイン,顽皮雷弹,Ball,Electric,电,66.6,1.2,Super Rare,1,0,1646
+#102,Exeggcute,タマタマ,蛋蛋,Egg,Grass / Psychic,草/超,2.5,0.4,Rare,0,50,1099
+#103,Exeggutor,ナッシー,椰蛋树,Coconut,Grass / Psychic,草/超,120,2,Super Rare,1,0,2955
+#104,Cubone,カラカラ,卡拉卡拉,Lonely,Ground,地,6.5,0.4,Rare,0,50,1006
+#105,Marowak,ガラガラ,嘎啦嘎啦,Bone Keeper,Ground,地,45,1,Super Rare,1,0,1656
+#106,Hitmonlee,サワムラー,飞腿郎,Kicking,Fighting,格,49.8,1.5,Super Rare,0,0,1492
+#107,Hitmonchan,エビワラー,快拳郎,Punching,Fighting,格,50.2,1.4,Super Rare,1,0,1516
+#108,Lickitung,ベロリンガ,大舌头,Licking,Normal,普,65.5,1.2,Very Rare,3,0,1626
+#109,Koffing,ドガース,瓦斯弹,Poison Gas,Poison,毒,1,0.6,Rare,0,50,1151
+#110,Weezing,マタドガス,双弹瓦斯,Poison Gas,Poison,毒,9.5,1.2,Super Rare,1,0,2250
+#111,Rhyhorn,サイホーン,独角犀牛,Spikes,Ground / Rock,地/岩,115,1,Rare,0,50,1182
+#112,Rhydon,サイドン,钻角犀兽,Spikes,Ground / Rock,地/岩,120,1.9,Very Rare,1,0,2243
+#113,Chansey,ラッキー,吉利蛋,Egg,Normal,普,34.6,1.1,Super Rare,3,0,675
+#114,Tangela,モンジャラ,蔓藤怪,Vine,Grass,草,35,1,Rare,3,0,1739
+#115,Kangaskhan,ガルーラ,袋兽,Parent,Normal,普,80,2.2,Super Rare,3,0,2043
+#116,Horsea,タッツー,墨海马,Dragon,Water,水,8,0.4,Rare,0,50,794
+#117,Seadra,シードラ,海刺龙,Dragon,Water,水,25,1.2,Super Rare,1,0,1713
+#118,Goldeen,トサキント,角金鱼,Goldfish,Water,水,15,0.6,Rare,0,50,965
+#119,Seaking,アズマオウ,金鱼王,Goldfish,Water,水,39,1.3,Very Rare,1,0,2043
+#120,Staryu,ヒトデマン,海星星,Star Shape,Water,水,34.5,0.8,Rare,0,50,937
+#121,Starmie,スターミー,宝石海星,Mysterious,Water / Psychic,水/超,80,1.1,Super Rare,1,0,2182
+#122,Mr. Mime,バリヤード,魔墙人偶,Barrier,Poison / Fairy,超/妖,80,1.1,Super Rare,0,0,1494
+#123,Scyther,ストライク,飞天螳螂,Barrier,Bug / Flying,虫/飞,56,1.5,Rare,1,0,2073
+#124,Jynx,ルージュラ,迷唇姐,Human Shape,Ice / Psychic,冰/超,40.6,1.4,Rare,3,0,1716
+#125,Electabuzz,エレブー,电击兽,Electric,Electric,电,30,1.1,Very Rare,3,0,2119
+#126,Magmar,ブーバー,鸭嘴火兽,Spitfire,Fire,火,44.5,1.3,Rare,3,0,2265
+#127,Pinsir,カイロス,凯罗斯,Stag Beetle,Bug,虫,55,1.5,Uncommon,3,0,2121
+#128,Tauros,ケンタロス,肯泰罗,Wild Bull,Normal,普,88.4,1.4,Rare,3,0,1844
+#129,Magikarp,コイキング,鲤鱼王,Fish,Water,水,10,0.9,Rare,0,400,262
+#130,Gyarados,ギャラドス,暴鲤龙,Atrocious,Water / Flying,水/飞,235,6.5,Super Rare,1,0,2688
+#131,Lapras,ラプラス,拉普拉斯,Transport,Water / Ice,水/冰,220,2.5,Super Rare,3,0,2980
+#132,Ditto,メタモン,百变怪,Transform,Normal,普,4,0.3,Super Rare,3,0,919
+#133,Eevee,イーブイ,伊布,Evolution,Normal,普,6.5,0.3,Common,0,25,1077
+#134,Vaporeon,シャワーズ,水伊布,Bubble Jet,Water,水,29,1,Super Rare,1,0,2816
+#135,Jolteon,サンダース,雷伊布,Lightning,Electric,电,24.5,0.8,Super Rare,1,0,2140
+#136,Flareon,ブースター,火伊布,Flame,Fire,火,25,0.9,Super Rare,1,0,2643
+#137,Porygon,ポリゴン,多边兽,Virtual,Normal,普,36.5,0.8,Common,3,0,1691
+#138,Omanyte,オムナイト,菊石兽,Spiral,Rock / Water,岩/水,7.5,0.4,Very Rare,0,50,1119
+#139,Omastar,オムスター,多刺菊石兽,Spiral,Rock / Water,岩/水,35,1,Super Rare,1,0,2233
+#140,Kabuto,カブト,化石盔,Shellfish,Rock / Water,岩/水,11.5,0.5,Very Rare,0,50,1104
+#141,Kabutops,カブトプス,镰刀盔,Shellfish,Rock / Water,岩/水,40.5,1.3,Super Rare,1,0,2130
+#142,Aerodactyl,プテラ,化石翼龙,Sleeping,Rock / Flying,岩/飞,59,1.8,Super Rare,3,0,2165
+#143,Snorlax,カビゴン,卡比兽,Sleeping,Normal,普,460,2.1,Very Rare,3,0,3112
+#144,Articuno,フリーザー,急冻鸟,Freeze,Ice / Flying,冰/飞,55.4,1.7,Super Rare,3,0,2978
+#145,Zapdos,サンダー,闪电鸟,Electric,Electric / Flying,电/飞,52.6,1.6,Super Rare,3,0,3114
+#146,Moltres,ファイヤー,火焰鸟,Flame,Fire / Flying,火/飞,60,2,Super Rare,3,0,3240
+#147,Dratini,ミニリュウ,迷你龙,Dragon,Dragon,龙,3.3,1.8,Rare,0,25,983
+#148,Dragonair,ハクリュー,哈克龙,Dragon,Dragon,龙,16.5,4,Super Rare,1,100,1747
+#149,Dragonite,カイリュー,快龙,Dragon,Dragon / Flying,龙/飞,210,4.2,Super Rare,2,0,3500
+#150,Mewtwo,ミュウツー,超梦,Genetic,Psychic,超,122,2,Super Rare,3,0,4144
+#151,Mew,ミュウ,梦幻,New Species,Psychic,超,4,0.4,Super Rare,3,0,3299

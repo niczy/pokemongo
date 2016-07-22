@@ -3,6 +3,7 @@
 var express = require('express');
 var app = express();
 var program = require('commander');
+var data = require('./server/data/pokemon')
 
 program
   .version('0.0.1')
@@ -18,6 +19,10 @@ console.log('static file prefix: ' + staticPathPrefix);
 
 app.get('/_/api', function(req, res){
     res.send('api');
+});
+
+app.get('/_/pokemon/list', function(req, res) {
+  res.send(data.pokemonList);
 });
 
 var staticDir = function(path) {

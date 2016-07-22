@@ -1,0 +1,26 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="my-pokimg">
+  <template>
+    <style>
+      :host {
+          display: block;
+          padding: 10px;
+      }
+    </style>
+    <img src="/images/pokemon/120px/{{ name }}.png">
+  </template>
+  <script>
+
+    Polymer({
+      is: 'my-pokimg',
+
+      properties: {
+        name: String
+      }
+    });
+
+  </script>
+
+
+</dom-module>
