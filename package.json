@@ -1,0 +1,26 @@
+{
+  "name": "pokemongo",
+  "version": "1.0.0",
+  "description": "This template is a starting point for building apps using a drawer-based layout.  The layout is provided by `app-layout` elements.",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niczy/pokemongo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niczy/pokemongo/issues"
+  },
+  "homepage": "https://github.com/niczy/pokemongo#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
