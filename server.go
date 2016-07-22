@@ -4,11 +4,9 @@ import (
 	"fmt"
 	"github.com/niczy/pokemongolib/handlers"
 	"net/http"
-	"server/handlers"
 )
 
 func init() {
-	http.HandleFunc("/", handler)
 	http.HandleFunc("/_/api", handlers.Api)
 }
 

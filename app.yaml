@@ -6,6 +6,10 @@ threadsafe: yes
 
 handlers:
 
+- url: /_/.*
+  script: _go_app
+  secure: always
+
 - url: /index.html
   static_files: build/bundled/index.html
   upload: build/bundled/index.html
@@ -38,6 +42,4 @@ handlers:
   upload: build/bundled/manifest.json
   secure: always
 
-- url: /.*
-  script: _go_app
-  secure: always
+
