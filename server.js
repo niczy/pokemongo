@@ -2,18 +2,34 @@
 
 var express = require('express');
 var app = express();
+var program = require('commander');
 
+program
+  .version('0.0.1')
+  .option('--dev', "Dev mode")
+  .parse(process.argv)
+
+console.log(program.dev)
+var staticPathPrefix = ''
+if (!program.dev) {
+  staticPathPrefix = '/build/bundled';
+}
+console.log('static file prefix: ' + staticPathPrefix);
 
 app.get('/_/api', function(req, res){
     res.send('api');
 });
 
-app.use('/bower_components', express.static(__dirname + '/build/bundled/bower_components'));
-app.use('/images', express.static(__dirname + '/build/bundled/images'));
-app.use('/src', express.static(__dirname + '/build/bundled/src'));
-app.use('/service-worker.js', express.static(__dirname + '/build/bundled/service-worker.js'));
-app.use('/manifest.json', express.static(__dirname + '/build/bundled/manifest.js'));
-app.use('/*', express.static(__dirname + '/build/bundled/index.html'));
-app.use('/', express.static(__dirname + '/build/bundled/index.html'));
+var staticDir = function(path) {
+  app.use(path, express.static(__dirname + staticPathPrefix + path));
+}
+
+staticDir('/bower_components');
+staticDir('/images');
+staticDir('/src');
+staticDir('/service-worker.js');
+staticDir('/manifest.json');
+staticDir('/index.html');
+staticDir('/')
 
 app.listen(8080);
