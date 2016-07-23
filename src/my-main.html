@@ -56,14 +56,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       last-response="{{pokemonList}}"
       debounce-duration="300"></iron-ajax>
     <template is="dom-repeat" items="[[pokemonList]]">
-      <my-pokimg name="{{item.Name-eng}}"></my-pokimg>
+      <a href="/collect-data/{{item.Name-eng}}">
+          <my-pokimg name="{{item.Name-eng}}"></my-pokimg>
+      </a>
     </template>
   </template>
 
   <script>
 
     Polymer({
-      is: 'my-main'
+      is: 'my-main',
+      
     });
 
   </script>

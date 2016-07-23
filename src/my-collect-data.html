@@ -9,8 +9,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="/src/components/pokimg.html">
 
-<dom-module id="my-view2">
+<dom-module id="my-collect-data">
 
   <template>
 
@@ -38,6 +39,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         color: #555;
         text-align: center;
       }
+      .data-row {
+        text-align: center;
+      }
+      .property {
+        display: inline-block;
+      }
       h1 {
         font-size: 22px;
         margin: 16px 0;
@@ -46,20 +53,39 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </style>
 
     <div class="card">
-      <div class="circle">2</div>
-      <h1>View Two</h1>
-      <p>Ea duis bonorum nec, falli paulo aliquid ei eum.</p>
-      <p>Id nam odio natum malorum, tibique copiosae expetenda mel ea.Detracto suavitate repudiandae no eum. Id adhuc minim soluta nam.Id nam odio natum malorum, tibique copiosae expetenda mel ea.</p>
+      <my-pokimg name="{{name}}"></my-pokimg>
+      <div>
+        <div class="property">
+          Type:
+        </div>
+        <div class="property">
+          Weight/Height:
+        </div>
+        <div class="property">
+          Rarity:
+        </div>
+      </div>
+      <div class="data-row">
+        Combat Power
+      </div>
+      <div class="data-row">
+        Hit Points
+      </div>
+      <div class="data-row">
+        Stardust
+      </div>
     </div>
-
   </template>
 
   <script>
 
     Polymer({
 
-      is: 'my-view2'
-
+      is: 'my-collect-data',
+      attached: function() {
+        console.log(window.location.pathname.match('/collect-data/(.*)'));
+        this.name = window.location.pathname.match('/collect-data/(.*)')[1];
+      }
     });
 
   </script>

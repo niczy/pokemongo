@@ -36,5 +36,7 @@ staticDir('/service-worker.js');
 staticDir('/manifest.json');
 staticDir('/index.html');
 staticDir('/')
+app.use('/collect-data', express.static(__dirname + staticPathPrefix + '/index.html'));
+app.use('/app', express.static(__dirname + staticPathPrefix + '/index.html'));
 
 app.listen(8080);
