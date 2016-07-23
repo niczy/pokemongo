@@ -9,7 +9,6 @@ var lines = pokemonListRaw.split('\n')
 console.log('Total file is ' + lines.length)
 
 let properties = lines[0].split(',');
-console.log('properties are ' + util.inspect(properties));
 var pokemonList = [];
 lines.slice(1).forEach(function(line) {
   let values = line.split(',');
@@ -20,7 +19,5 @@ lines.slice(1).forEach(function(line) {
   obj.Number = Number(obj.Number.substr(1));
   pokemonList.push(obj);
 });
-
-console.log(util.inspect(pokemonList));
 
 exports.pokemonList = pokemonList;
