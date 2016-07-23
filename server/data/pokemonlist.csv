@@ -1,4 +1,4 @@
-Number,Name-eng,Name-jp,Name-chs,Category,Type-eng,Type-ch's,Weight(kg),Height(m),Rarity,Evolve Level,Evolve(Candy),Max CP
+Number,Name-eng,Name-jp,Name-chs,Category,Type-eng,Type-ch,Weight,Height,Rarity,Evolve Level,Candy,MaxCP
 #001,Bulbasaur,フシギダネ,妙蛙种子,Seed,Grass / Poison,草/毒,6.9,0.7,Uncommon,0,25,1071
 #002,Ivysaur,フシギソウ,妙蛙草,Seed,Grass / Poison,草/毒,13,1,Very Rare,1,100,1632
 #003,Venusaur,フシギバナ,妙蛙花,Seed,Grass / Poison,草/毒,100,2,Super Rare,2,0,2580

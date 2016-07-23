@@ -4,6 +4,6 @@
   "fragments": [
     "src/my-main.html",
     "src/my-collect-data.html",
-    "src/my-view3.html"
+    "src/my-result.html"
   ]
 }

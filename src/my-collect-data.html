@@ -11,6 +11,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/paper-slider/paper-slider.html">
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="/src/components/pokimg.html">
 
 <dom-module id="my-collect-data">
@@ -23,18 +24,34 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         padding: 10px;
       }
       .card {
+        position: relative;
+        top: -56px;
+        z-index: -1;
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
         padding: 60px 16px 16px;
-        margin: 10px 24px 24px;
+        margin: 6px 6px 24px;
         border-radius: 5px;
         background-color: #fff;
         color: #757575;
       }
-      .pokemon {
+      .circle {
         position: relative;
-        top: 60px;
+        top: 30px;
+        width: 120px;
+        height: 120px;
         display: block;
+        padding: 20px;
         margin: 0 auto;
+        text-align: center;
+        background-size: contain;  
+        background-image: url("/images/bg-head@3x.png");
+        background-repeat: no-repeat;
+      }
+      .pokemon {
+        margin: 0 auto;
+        display: block;
+        height: 100px;
+        width: 100px;
       }
       
       .data-row {
@@ -49,6 +66,28 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         display: inline-block;
         text-align: center;
         padding-bottom: 20px;
+      }
+      .property span {
+        display: block;
+      }
+      .att-name {
+        color: #a09f9f;
+        font-size: 0.8em;
+        margin-bottom: 10px;
+      }
+      .att-value {
+        color: #307e8c;
+      }
+      .vertical-divider {
+        display: inline;
+        height: 50px;
+        border-left: solid 1px #ececec;
+        margin: 5px 0 0;
+      }
+      .horizental-divider {
+        display: block;
+        border-bottom: solid 1px #ececec;
+        margin-bottom: 8px;
       }
       .flex-horizontal-with-ratios {
         @apply(--layout-horizontal);
@@ -73,7 +112,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         background-color: var(--paper-indigo-100);
       }
       paper-button.indigo {
-        background-color: var(--paper-indigo-500);
+        text-align: center;
+        font-weight: bold;
+        background-color: #4bdae8;
         color: white;
         --paper-button-raised-keyboard-focus: {
           background-color: var(--paper-pink-a200) !important;
@@ -88,29 +129,58 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         margin: 0 auto;
         width: 100px;  
       }
+      .pokemon-name {
+        position: relative;
+        top: 16px;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: white;
+        display: block;
+        text-align: center;
+      }
     </style>
-
-    <img class="pokemon" src="/images/pokemon/120px/[[pokemonName]].png"></img>
+    <iron-ajax
+      auto
+      url="/_/pokemon/list/{{Number}}"
+      handle-as="json"
+      last-response="{{pokemonAttr}}"
+      debounce-duration="300"></iron-ajax>
+    <span class="pokemon-name">
+      {{pokemonName}}
+    </span>
+    <div class="circle">
+      <img class="pokemon" src="/images/pokemon/120px/[[pokemonName]].png"></img>
+    </div>
     <div class="card">
       <div class="container flex-horizontal-with-ratios">
         <div class="property flexchild">
-          Type:
+          <span class="att-name">Type:</span>
+          <span class="att-value">[[pokemonAttr.Type-eng]] </span>
+        </div>
+        <div class="vertical-divider">
         </div>
         <div class="property flexchild">
-          Weight/Height:
+          <span class="att-name">Weight/Height:</span>
+          <span class="att-value">[[pokemonAttr.Weight]]kg/[[pokemonAttr.Height]]m</span>
+        </div>
+        <div class="vertical-divider">
         </div>
         <div class="property flexchild">
-          Rarity:
+          <span class="att-name">Rarity:</span>
+          <span class="att-value">[[pokemonAttr.Rarity]] </span>
         </div>
       </div>
+      <div class="horizental-divider"></div>
       <div class="data-row">
         Combat Power
         <paper-slider value={{cp}} editable></paper-slider>
       </div>
+      <div class="horizental-divider"></div>
       <div class="data-row">
         Hit Points
         <paper-slider value={{hp}} editable></paper-slider>
       </div>
+      <div class="horizental-divider"></div>
       <div class="data-row">
         Stardust
         <paper-slider value={{sd}} editable></paper-slider>
@@ -132,17 +202,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         },
         pokemonName: String
       },
-      _extraDataChanged: function(extraData) {
-        console.log(JSON.stringify(extraData));
-        if (extraData && extraData['prefix'] == '/collect-data') {
-          this.pokemonName = extraData['path'].substr(1);
-          console.log(this.xxxx);
+      _extraDataChanged: function() {
+        if (this.extraData && this.extraData['prefix'] == '/collect-data') {
+          var matches = this.extraData.path.match('/(.*)/(.*)');
+          this.pokemonName = matches[1];
+          this.Number = matches[2];
+        } else {
+          this.pokemonName = '';
+          this.Number = undefined;
         }
-        console.log(JSON.stringify(extraData));
+        console.log(JSON.stringify(this.extraData));
       }
     });
-
-
   </script>
 
 </dom-module>

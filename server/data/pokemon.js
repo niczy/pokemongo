@@ -16,7 +16,7 @@ lines.slice(1).forEach(function(line) {
   values.forEach(function(value, idx) {
     obj[properties[idx]] = value;
   });
-  obj.Number = Number(obj.Number.substr(1));
+  obj.Number = Number(obj.Number.substr(1))-1;
   pokemonList.push(obj);
 });
 

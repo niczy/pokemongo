@@ -10,7 +10,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="import" href="../bower_components/polymer/polymer.html">
 
-<dom-module id="my-view3">
+<dom-module id="my-result">
 
   <template>
 
@@ -27,29 +27,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         background-color: #fff;
         color: #757575;
       }
-      .circle {
-        display: inline-block;
-        height: 64px;
-        width: 64px;
-        border-radius: 50%;
-        background: #ddd;
-        line-height: 64px;
-        font-size: 30px;
-        color: #555;
-        text-align: center;
-      }
-      h1 {
-        font-size: 22px;
-        margin: 16px 0;
-        color: #212121;
-      }
     </style>
 
     <div class="card">
-      <div class="circle">3</div>
-      <h1>View Three</h1>
-      <p>Modus commodo minimum eum te, vero utinam assueverit per eu.</p>
-      <p>Ea duis bonorum nec, falli paulo aliquid ei eum.Has at minim mucius aliquam, est id tempor laoreet.Pro saepe pertinax ei, ad pri animal labores suscipiantur.</p>
+      {{hp}}
+      {{cp}}
+      {{sd}}
     </div>
 
   </template>
@@ -58,8 +41,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     Polymer({
 
-      is: 'my-view3'
-
+      is: 'my-result',
+      properties: {
+        extraData: {
+          type: Object,
+          observer: '_extraDataChanged'
+        },
+      },
+      _extraDataChanged: function(extraData) {
+        console.log(JSON.stringify(extraData));
+        if (extraData && extraData['prefix'] == '/result') {
+          let query = extraData.__queryParams;
+          this.hp = query.hp;
+          this.cp = query.cp;
+          this.sd = query.sd;
+        }
+        console.log(JSON.stringify(extraData));
+      }
     });
 
   </script>
