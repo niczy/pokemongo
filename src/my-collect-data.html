@@ -53,7 +53,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </style>
 
     <div class="card">
-      <my-pokimg name="{{name}}"></my-pokimg>
+      <my-pokimg name="{{pokemonName}}"></my-pokimg>
       <div>
         <div class="property">
           Type:
@@ -80,13 +80,24 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <script>
 
     Polymer({
-
       is: 'my-collect-data',
-      attached: function() {
-        console.log(window.location.pathname.match('/collect-data/(.*)'));
-        this.name = window.location.pathname.match('/collect-data/(.*)')[1];
+      properties: {
+        extraData: {
+          type: Object,
+          observer: '_extraDataChanged'
+        },
+        pokemonName: String
+      },
+      _extraDataChanged: function(extraData) {
+        console.log(JSON.stringify(extraData));
+        if (extraData && extraData['prefix'] == '/collect-data') {
+          this.pokemonName = extraData['path'].substr(1);
+          console.log(this.xxxx);
+        }
+        console.log(JSON.stringify(extraData));
       }
     });
+
 
   </script>
 
