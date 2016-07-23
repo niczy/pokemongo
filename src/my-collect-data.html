@@ -9,6 +9,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-slider/paper-slider.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
 <link rel="import" href="/src/components/pokimg.html">
 
 <dom-module id="my-collect-data">
@@ -22,58 +24,100 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
       .card {
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-        padding: 16px;
-        margin: 24px;
+        padding: 60px 16px 16px;
+        margin: 10px 24px 24px;
         border-radius: 5px;
         background-color: #fff;
         color: #757575;
       }
-      .circle {
-        display: inline-block;
-        height: 64px;
-        width: 64px;
-        border-radius: 50%;
-        background: #ddd;
-        line-height: 64px;
-        font-size: 30px;
-        color: #555;
-        text-align: center;
+      .pokemon {
+        position: relative;
+        top: 60px;
+        display: block;
+        margin: 0 auto;
       }
+      
       .data-row {
         text-align: center;
+        height: 80px;
+      }
+      .data-row paper-slider {
+        width: 80%;
+        margin: 0 auto;
       }
       .property {
         display: inline-block;
+        text-align: center;
+        padding-bottom: 20px;
       }
-      h1 {
-        font-size: 22px;
-        margin: 16px 0;
-        color: #212121;
+      .flex-horizontal-with-ratios {
+        @apply(--layout-horizontal);
+      }
+      .flexchild {
+        @apply(--layout-flex);
+      }
+      paper-button.custom {
+        --paper-button-ink-color: var(--paper-pink-a200);
+        /* These could also be individually defined for each of the
+          specific css classes, but we'll just do it once as an example */
+        --paper-button-flat-keyboard-focus: {
+          background-color: var(--paper-pink-a200);
+          color: white !important;
+        };
+        --paper-button-raised-keyboard-focus: {
+          background-color: var(--paper-pink-a200) !important;
+          color: white !important;
+        };
+      }
+      paper-button.custom:hover {
+        background-color: var(--paper-indigo-100);
+      }
+      paper-button.indigo {
+        background-color: var(--paper-indigo-500);
+        color: white;
+        --paper-button-raised-keyboard-focus: {
+          background-color: var(--paper-pink-a200) !important;
+          color: white !important;
+        };
+      }
+      a {
+        text-decoration: none;
+      }
+      .confirm {
+        display: block;
+        margin: 0 auto;
+        width: 100px;  
       }
     </style>
 
+    <img class="pokemon" src="/images/pokemon/120px/[[pokemonName]].png"></img>
     <div class="card">
-      <my-pokimg name="{{pokemonName}}"></my-pokimg>
-      <div>
-        <div class="property">
+      <div class="container flex-horizontal-with-ratios">
+        <div class="property flexchild">
           Type:
         </div>
-        <div class="property">
+        <div class="property flexchild">
           Weight/Height:
         </div>
-        <div class="property">
+        <div class="property flexchild">
           Rarity:
         </div>
       </div>
       <div class="data-row">
         Combat Power
+        <paper-slider value={{cp}} editable></paper-slider>
       </div>
       <div class="data-row">
         Hit Points
+        <paper-slider value={{hp}} editable></paper-slider>
       </div>
       <div class="data-row">
         Stardust
+        <paper-slider value={{sd}} editable></paper-slider>
       </div>
+      <a href="/result?hp=[[hp]]&cp=[[cp]]&sd=[[sd]]" tabindex="-1">
+          <paper-button raised class="custom indigo confirm">Confirm</paper-button>
+      </a>
     </div>
   </template>
 
