@@ -31,8 +31,9 @@ app.get('/_/pokemon/list/:id', function(req, res) {
   res.send(data.pokemonList[Number(req.params.id)]);
 });
 
+var oneDay = 86400000; 
 var staticDir = function(path) {
-  app.use(path, express.static(__dirname + staticPathPrefix + path));
+  app.use(path, express.static(__dirname + staticPathPrefix + path, { maxAge: oneDay }));
 }
 
 staticDir('/bower_components');
