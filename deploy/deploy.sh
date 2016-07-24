@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TAG=20160723
+TAG=20160723-1
 polymer build
 # remove extra go files.
 docker build --no-cache -t gcr.io/nich01as-com/pokemongo:$TAG .

@@ -12,7 +12,7 @@ spec:
       containers:
         -
           name: pokemongo 
-          image: gcr.io/nich01as-com/pokemongo:20160723
+          image: gcr.io/nich01as-com/pokemongo:20160723-1
           ports:
             -
               containerPort: 8080
